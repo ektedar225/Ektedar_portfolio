@@ -13,13 +13,13 @@ export const navItems: NavItem[] = [
 
 export const personalInfo = {
   name: 'Ektedar Ahmad',
-  title: 'B.Tech, IIT Jodhpur | Interdisciplinary Technologist | Machine Learning & Quantitative Mindset | Web Developer',
+  title: 'B.Tech Chemical Engineering | Minor in Artificial Intelligence',
   institute: 'Indian Institute of Technology Jodhpur',
   phone: '+91-8960255100',
   email: 'b23ch1017@iitj.ac.in',
-  github: 'https://github.com/ektedar225',
-  linkedIn: 'https://www.linkedin.com/in/ektedar-ahmad-91915b280/',
-  
+  github: 'ektedar225',
+  linkedIn: 'https://linkedin.com/in/',
+  website: 'https://ektedar-portfolio.com',
 };
 
 export const educationData: EducationItem[] = [
@@ -45,23 +45,56 @@ export const educationData: EducationItem[] = [
 
 export const experienceData: ExperienceItem[] = [
   {
+    title: 'Amazon ML Summer School',
+    company: 'Amazon',
+    date: 'Aug 2025',
+    location: 'Remote',
+    description: [
+      'Selected among top students across India to participate in Amazon’s flagship ML Summer School, focused on core and advanced AI concepts.',
+      'Completed an intensive curriculum covering supervised learning, unsupervised learning, sequential models, reinforcement learning, generative AI, and causal inference.',
+      'Gained hands-on experience implementing ML models, neural networks, and policy gradient algorithms in practical coding labs guided by Amazon ML scientists.',
+      'Explored state-of-the-art ML applications in real-world scenarios like recommendation systems, forecasting, and natural language understanding.',
+      'Earned Letter of Acknowledgement from Amazon for successfully completing the program.',
+    ],
+    technologies: [
+      'Machine Learning',
+      'Deep Learning',
+      'Reinforcement Learning',
+      'Generative AI',
+      'Causal Inference',
+    ],
+  },
+  {
+    title: 'McKinsey Forward Program',
+    company: 'McKinsey & Company',
+    date: '2025',
+    location: 'Global Online Program',
+    description: [
+      'Selected for McKinsey’s Forward Program (competitive leadership training) designed for high-potential students and early professionals.',
+      'Trained in problem-solving frameworks, critical thinking, and structured communication, modeled after McKinsey’s consulting toolkit.',
+      'Completed modules on digital transformation, business analytics, and strategic decision-making, applying learnings to simulated client case studies.',
+      'Collaborated in cross-functional global teams, strengthening skills in leadership, teamwork, and decision-making under constraints.',
+      'Recognized for developing an action-oriented growth mindset and adopting McKinsey’s MECE (Mutually Exclusive, Collectively Exhaustive) problem structuring approach.',
+    ],
+    technologies: [
+      'Leadership',
+      'Problem Solving',
+      'Business Analytics',
+      'Digital Transformation',
+    ],
+  },
+  {
     title: 'Inter IIT Tech Meet 13.0: ISRO, Support Team',
-    company: 'ISRO, IIT Jodhpur',
+    company: 'Three.js, WebGL, XRF Analysis, Python',
     date: 'Oct 2024 - Dec 2024',
     location: 'Mumbai',
     description: [
-      'Developed a real-time pipeline for high-resolution elemental mapping of the lunar surface using XRF spectra from CLASS.',
-      'Preprocessed FITS and XSM files, classified data by solar angle, and implemented background subtraction for accurate signal extraction.',
-      'Engineered a gridding algorithm to structure irregular lunar regions into a uniform 0.4° x 0.4° grid, enabling consistent geochemical analysis.',
-      'Evaluated and compared spatial interpolation models (autoencoders, CNNs, XGBoost, random forest), selecting kriging for its superior accuracy (MSE=0.01, R²≈1).',
-      'Integrated MySQL to replace CSV-based backend, reducing data processing time from 8s to <1s per FITS file, enabling real-time heatmap updates.',
-      'Automated classification of lunar regions (Highlands, Mare, ilmenite, ISRU, craters, water-ice) and implemented subpixel mapping for enhanced spatial resolution.'
+      'Secured 2nd runner-up among 23 IITs by developing a real-time 3D lunar surface visualization using Three.js and WebGL.',
+      'Processed and mapped XRF line intensity data from 50+ lunar samples, achieving 90% spatial mapping accuracy.',
+      'Conducted compositional analysis on 100+ elemental maps to identify heterogeneity with 95% detection accuracy.',
     ],
-    technologies: [
-      'Python', 'NumPy', 'Pandas', 'Astropy', 'FITS', 'XSM', 'MySQL', 'SQL', 'Kriging', 'Scikit-learn', 'CNN', 'XGBoost', 'Random Forest', 'Autoencoder', 'Data Visualization', 'Matplotlib', 'Seaborn', 'Geospatial Analysis', 'Linux', 'Shell Scripting'
-    ],
-    link: 'https://ektedar225.github.io/3D-lunar-visualization-model/',
-    githubLink: 'https://github.com/ektedar225/3D-lunar-visualization-model',
+    technologies: ['Three.js', 'WebGL', 'Python', 'Data Analysis'],
+    link: '#',
   },
   {
     title: 'Full Stack Web Development Intern',
@@ -69,30 +102,46 @@ export const experienceData: ExperienceItem[] = [
     date: 'Jun 2024 - Aug 2024',
     location: 'Remote',
     description: [
-      'Designed and developed a premium subscription web application using React and TypeScript, enabling secure user authentication and onboarding.',
-      'Built a responsive, modern UI with Tailwind CSS, optimizing for both desktop and mobile experiences.',
-      'Integrated Razorpay payment gateway for seamless and secure subscription transactions.',
-      'Implemented Google OAuth and email/password authentication via Firebase to enhance user sign-up options.',
-      'Developed protected routes and context-based state management for secure access control and personalized user flows.',
-      'Configured and maintained project tooling with Vite, ESLint, and PostCSS for efficient development and code quality.'
+      'Designed a subscription-based portfolio platform using the MERN stack, onboarding 200+ users in Month 3.',
+      'Optimized React + Tailwind UI to reduce average page load from 1.5s to 1.1s (25% faster) across desktop and mobile.',
+      'Integrated Razorpay and Google OAuth, lifting sign-up conversions by 30% and boosted user engagement by 40%.',
+    ],
+    technologies: ['MERN Stack', 'React', 'Tailwind CSS', 'Razorpay', 'Google OAuth'],
+    link: '#',
+  },
+  {
+    title: 'Capital Markets Analyst',
+    company: 'Tradeshala',
+    date: 'May 2025 – Jun 2025',
+    location: 'Remote',
+    description: [
+      'Gained practical exposure to global and Indian financial markets, derivatives, and market microstructure.',
+      'Presented market outlooks and trading strategies using data-driven technical and macroeconomic analysis.',
+      'Backtested intraday and positional strategies on TradersQuote; and improved edge via performance metrics.'
     ],
     technologies: [
-      'React',
-      'TypeScript',
-      'Firebase (Authentication)',
-      'Razorpay (Payment Integration)',
-      'Tailwind CSS',
-      'Vite (Build Tool)',
-      'PostCSS',
-      'ESLint',
-      'Lucide React (Icon Library)'
+      'Equity Markets', 'Technical Analysis', 'Fundamental Analysis', 'Strategy Backtesting', 'Derivatives', 'Market Microstructure'
     ],
-    link: 'https://ektedar225.github.io/Main_flow/',
-    githubLink: 'https://github.com/ektedar225/Main_flow',
   },
 ];
 
 export const projectsData: ProjectItem[] = [
+  {
+    title: 'HackRx Document Q&A Service: Backend with FastAPI & Pinecone',
+    technologies: [
+      'FastAPI', 'LangChain', 'OpenAI Embeddings', 'Pinecone', 'SemanticChunker', 'PyPDFLoader', 'AsyncIO'
+    ],
+    date: 'May 2025 – Aug 2025',
+    description: [
+      'Built an asynchronous FastAPI microservice to parse, chunk, and index large unstructured documents (PDFs/ZIPs) into Pinecone vector store for scalable semantic search.',
+      'Engineered a namespace-based caching strategy, reducing repeated query latency by >80% while maintaining retrieval accuracy (≥0.95 cosine similarity).',
+      'Integrated OpenAI Embeddings + LangChain pipeline with custom RetrievalQA prompts to ensure concise, numerical, and document-grounded answers.',
+      'Implemented async workflows with AsyncIO, supporting multi-user concurrent queries and reducing average response time to sub-second.',
+      'Enhanced document ingestion pipeline with SemanticChunker + PyPDFLoader, enabling accurate contextual retrieval across 1,000+ pages.'
+    ],
+    link: '',
+    githubLink: '',
+  },
   {
     title: 'AI-Driven Algorithmic Trading Bot',
     technologies: ['GenAI', 'Python', 'RSI', 'MACD', 'ADX', 'VWAP', 'Gemini API', 'News API'],
@@ -102,58 +151,28 @@ export const projectsData: ProjectItem[] = [
       'Leveraged Gemini and News API to enhance profit by using technical indicators and market sentiment analysis.',
       'Implemented trailing stop-loss and conditional trade logic, reducing downside risk by 20% with 99% uptime.',
     ],
-    // No link or githubLink provided
+    link: '#',
   },
   {
     title: 'Medicine Recommendation Model',
-    technologies: [
-      'Python',
-      'Flask',
-      'Pandas',
-      'Scikit-learn',
-      'HTML',
-      'CSS',
-      'Jinja2',
-      'CSV',
-      'Windows OS'
-    ],
+    technologies: ['KNN', 'Naïve Bayes', 'Random Forest', 'Data Analysis', 'Python', 'Flask'],
     date: 'Jul 2023 - Sep 2023',
     description: [
-      'Developed a Flask-based web application for medical report analysis and symptom prediction under the guidance of Dr. Seema Saini (IIT Jodhpur, SME & Affiliate Faculty in AI & DS).',
-      'Integrated machine learning models to predict diseases based on user-input symptoms and processed medical datasets (CSV) for model training and inference.',
-      'Implemented secure file upload and preprocessing for medical images and reports, ensuring privacy and reliability.',
-      'Designed user-friendly web interfaces using HTML, CSS, and Jinja2 templates for seamless user experience.',
-      'Automated medicine recommendation based on predicted diseases, including confirmation of disease, recommended medicines, pre-appointment actions, and home remedies.',
-      'Utilized data analysis techniques for symptom arrangement, feature engineering, and robust backend logic.',
-      'Overcame major challenges in data collection and ensured accurate, actionable predictions for users.'
+      'Developed an intelligent model under Dr. Seema Saini to predict diseases with 85% accuracy using KNN, Naïve Bayes, and Random Forest on 10,000+ reports, assisting doctors in disease analysis and medication suggestion.',
+      'Deployed a Flask-based interface supporting 20+ concurrent files, improving report processing speed by 30%.',
     ],
-    githubLink: 'https://github.com/ektedar225/medicine_recommendation_by_using_medical_report',
+    link: '#',
   },
   {
     title: 'AC Service Website',
-    technologies: [
-      'React',
-      'TypeScript',
-      'Tailwind CSS',
-      'Framer Motion (animations)',
-      'React Slick (carousel/slider)',
-      'Lucide React (icons)',
-      'i18next (internationalization)',
-      'Vite (build tool)',
-      'Google Fonts',
-      'Static hosting (InfinityFree, GitHub Pages)'
-    ],
+    technologies: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript', 'SEO'],
     date: 'May 2023 - Jun 2023',
     description: [
-      'Developed a modern, fully responsive React web application for an appliance repair business, optimized for both desktop and mobile users.',
-      'Designed and implemented dynamic service, pricing, and testimonial sections, including interactive carousels and real-time review submission (local state for static hosting).',
-      'Integrated multi-language support (English/Arabic) using i18next for broader audience reach.',
-      'Built a custom appointment booking form with WhatsApp integration for instant customer communication.',
-      'Ensured SEO optimization with semantic HTML, meta tags, and fast-loading static assets for better search engine visibility.',
-      'Deployed the site as a static build on InfinityFree and GitHub Pages, with a clean asset structure and SPA routing support.'
+      'Launched a PHP+MySQL-based AC service portal attracting 300+ monthly visitors and processing 40+ bookings.',
+      'Built responsive front-end using HTML, CSS, and JavaScript, and added SEO optimizations to boost traffic by 25%.',
+      'Added responsiveness to ensure fast loading and seamless experience across various devices and screen sizes.',
     ],
-    link: 'https://riyadh-abdul-qadir-ac-services.com/',
-    githubLink: 'https://github.com/ektedar225/Booking_appointment',
+    link: '#',
   },
   {
     title: 'GenAI-Powered Trading System with Sentiment Technical Indicators',
@@ -164,7 +183,7 @@ export const projectsData: ProjectItem[] = [
       'Integrated Google Gemini API and NLP-based analysis to enhance accuracy under volatile market conditions.',
       'Automated SmartAPI trades with TOTP login, trailing stop-loss, and dynamic capital management for risk control.',
     ],
-    // No link or githubLink provided
+    link: '#',
   },
   {
     title: 'Stock Movement Prediction - CNN-LSTM + LGBM',
@@ -175,7 +194,7 @@ export const projectsData: ProjectItem[] = [
       'Engineered time-series features using sliding windows and technical indicators like RSI, MACD, and ADX.',
       'Applied early stopping and regularization techniques to reduce overfitting and boost predictive performance.',
     ],
-    // No link or githubLink provided
+    link: '#',
   },
   {
     title: 'Statistical Arbitrage - Pairs Trading',
@@ -186,7 +205,7 @@ export const projectsData: ProjectItem[] = [
       'Executed long-short trades using z-score triggers with dynamic capital allocation for each selected stock pair.',
       'Backtested strategy using efficient frontier to reduce portfolio risk and generate alpha in market-neutral conditions.',
     ],
-    // No link or githubLink provided
+    link: '#',
   },
   {
     title: 'Classroom Management System',
@@ -197,79 +216,7 @@ export const projectsData: ProjectItem[] = [
       'Structured RESTful APIs to handle classes, assignments, and user data with robust Mongoose schema validation.',
       'Delivered a sleek, real-time frontend experience using React and Tailwind with responsive design principles.',
     ],
-    githubLink: 'https://github.com/ektedar225/eduhub-interiit-mock',
-  },
-  {
-    title: 'Handwritten Answer Sheet Evaluation System',
-    technologies: [
-      'Tesseract.js (OCR)',
-      'TypeScript',
-      'React',
-      'Zustand',
-      'REST API',
-      'Cloud LLM (API)',
-      'Serverless Architecture'
-    ],
-    date: 'Mar 2025 - May 2025',
-    description: [
-      'Developed an intelligent system for automated evaluation of handwritten student answers under the guidance of Prof. Santhosh Varanasi, IIT Jodhpur.',
-      'Utilized Tesseract.js for browser-based OCR to extract text from scanned answer sheets, enabling seamless digitization of handwritten content.',
-      'Integrated cloud-based large language models via REST endpoints to perform context-aware answer evaluation without custom ML training.',
-      'Designed a fully serverless, client-first architecture, minimizing backend complexity and operational costs.',
-      'Implemented rapid prototyping with mock data to simulate real-world educational scenarios and validate the evaluation pipeline.',
-      'Leveraged Zustand for lightweight state management and React for a modern, interactive user interface.'
-    ],
-    link: 'https://ektedar225.github.io/answersheet_evaluator/',
-    githubLink: 'https://github.com/ektedar225/Handwritten-Answer-Sheet-Evaluation',
-  },
-  {
-    title: 'Customer Segmentation & Market Basket Analysis',
-    technologies: [
-      'Python',
-      'pandas',
-      'numpy',
-      'matplotlib',
-      'seaborn',
-      'plotly',
-      'scikit-learn',
-      'yellowbrick',
-      'mlxtend',
-      'Jupyter Notebook',
-      'Excel'
-    ],
-    date: 'Jan 2025 - Mar 2025',
-    description: [
-      'Worked as a Machine Learning and Data Analyst on a real-world retail dataset with over 500,000 rows, focusing on customer segmentation and market basket analysis.',
-      'Spent significant time on data cleaning and preprocessing, ultimately using 300,000 high-quality records for analysis.',
-      'Performed exploratory data analysis (EDA) with visualizations (histograms, boxplots, violin plots, heatmaps) to understand feature distributions and data quality.',
-      'Engineered features such as Recency, Frequency, Monetary Value, Basket Size, and Number of Returns; applied one-hot encoding for categorical variables.',
-      'Standardized features and used PCA for dimensionality reduction prior to clustering.',
-      'Applied KMeans and Agglomerative Clustering for customer segmentation, visualizing clusters in 2D/3D and analyzing group characteristics.',
-      'Conducted market basket analysis using the Apriori algorithm and generated association rules for actionable product recommendations.',
-      'Leveraged Python’s data science ecosystem (pandas, scikit-learn, mlxtend, etc.) for end-to-end analysis and business insight extraction.'
-    ],
-    githubLink: 'https://github.com/ektedar225/Market-Basket-Analysis-And-Customer-Segmentation',
-  },
-  {
-    title: 'EKT Coin Blockchain Frontend Interface',
-    technologies: [
-      'React',
-      'TypeScript',
-      'Vite',
-      'Tailwind CSS',
-      'ESLint',
-      'PostCSS'
-    ],
-    date: 'Apr 2025 - May 2025',
-    description: [
-      'Developed a blockchain-based web application simulating a cryptocurrency (EKT Coin) with core blockchain functionalities including block creation, transaction management, and chain validation.',
-      'Built a modular blockchain system from scratch in TypeScript, implementing Block, Blockchain, and Transaction modules for educational and demonstration purposes.',
-      'Designed and implemented a user-friendly, responsive frontend interface using React and Tailwind CSS, allowing users to visualize the blockchain, inspect blocks, and submit transactions in real time.',
-      'Integrated custom blockchain logic with the frontend for seamless, interactive updates and user engagement.',
-      'Ensured code quality, maintainability, and modern development standards with ESLint, TypeScript, and PostCSS tooling.'
-    ],
-    link: 'https://ektedar225.github.io/EKT_Coin/',
-    githubLink: 'https://github.com/ektedar225/EKT_Coin',
+    link: '#',
   },
 ];
 
